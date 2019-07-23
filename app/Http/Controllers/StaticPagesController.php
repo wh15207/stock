@@ -9,14 +9,16 @@ class StaticPagesController extends Controller
 {
     //
     public function home(){
-        return "首页";
+
+        return view('static_pages/home');
     }
 
     public function help(){
-        return "帮助";
+        return view('static_pages/help');
     }
 
     public function about(){
-        return "关于我们";
+        return view('static_pages/about');
+
     }
 }
