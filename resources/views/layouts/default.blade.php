@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>@yield('title','stock App')- Laravel 新手入门教程</title>
-    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 <body>
     @include("layouts._header")
@@ -14,6 +14,6 @@
             @include("layouts._footer")
         </div>
     </div>
-    <script src="../js/app.js"></script>
+    <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
